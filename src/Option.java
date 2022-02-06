@@ -11,9 +11,9 @@ public class Option {
 	        switch (arg1){
 	            case "help": System.out.println("Help");break;
 	            case "add": new Addition(arg2,arg3);break;
-	            case "sub":break;
-	            case "mul": break;
-	            case "div": break;
+	            case "sub": new Subtraction(arg2,arg3);break;
+	            case "mul": new Multiplication(arg2,arg3);break;
+	            case "div": new Division(arg2,arg3);break;
 	            default: new Session();
 	        }
 	    }
